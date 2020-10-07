@@ -9,24 +9,27 @@
 </head>
 <body>
     <script>
+
+        function pulaLinha() {
+            document.write("<br>")
+            document.write("<br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha()
+        }
+
         var ano = 2020
-        document.write("Flávio tem " + (ano - 1998) + " anos");
-        document.write("<br>")
-        document.write("Gabriel tem " + (ano - 2002) + " anos");
-        document.write("<br>")
-        document.write("Bruno tem " + (ano - 1976) + " anos");
-        document.write("<br>")
 
+        mostra("Flávio tem " + (ano - 1998) + " anos");
+        mostra("Gabriel tem " + (ano - 2002) + " anos");
+        mostra("Bruno tem " + (ano - 1976) + " anos");
         ano = 2019
-        document.write("Gabriela tem " + (ano - 1976) + " anos");
-        document.write("<br>")
+        mostra("Gabriela tem " + (ano - 1976) + " anos");
+ 
 
-        var flávio = 22
-        var gabriel = 18
-        var bruno = 44
-        var gabriela = 43
-        var media = (gabriel + bruno + gabriela + flávio)/4
-        document.write("A média das idades é de " + Math.round(media));
+
 
      </script>
 </body>
