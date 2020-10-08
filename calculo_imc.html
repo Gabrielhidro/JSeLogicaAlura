@@ -20,18 +20,27 @@
             pulaLinha()
         }
 
-        function calculaIMC (altura, peso) {
+        function calculaIMC(altura,peso) {
             return peso / (altura * altura);
         }
 
         var nome = prompt("informe seu nome")
-        var alturaInformada = prompt("informe sua altura")
-        var pesoInformado = prompt("informe seu peso")
-        var imc = calculaIMC(alturaInformada, pesoInformado)
+        var pesoInf = prompt("informe seu peso")
+        var alturaInf = prompt("informe sua altura")
 
-        mostra (nome + ", seu IMC é " + imc)
+        var imc = calculaIMC(alturaInf, pesoInf)
+         
+        mostra(nome + " o IMC calculado é " + imc)
+
+        if (imc > 35.0)
+        mostra (nome + " seu peso está acima da média")
 
         
+        if (imc < 18.0)
+        mostra (nome + " seu peso está abaixo da média")
+
+        if (imc > 18.0 < 35.5)
+        mostra (nome + " voce ta tranquilo")
 
      </script>
 </body>

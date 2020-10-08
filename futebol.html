@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>")
+            document.write("<br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha()
+        }
+
+      var vitorias = parseInt(prompt("quantas vitórias tem seu time ?"))
+      var empates = parseInt(prompt("quantos empates tem seu time ?"))
+      var pontos = vitorias * 3 + empates
+      
+      mostra ("Seu time tem " + pontos + " pontos")
+
+        if (pontos > 20) {
+           mostra ("seu time melhorou")
+        }
+
+        if (pontos < 20) {
+            mostra ("seu time piorou")
+            }
+
+     </script>
+</body>
+</html>
