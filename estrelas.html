@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>")
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha()
+        }
+
+      for (var linha = 1; linha <= 3; linha++) {
+          for (var coluna = 1; coluna <= 10; coluna++) 
+          {document.write("*")
+          }
+          pulaLinha()
+      }
+
+     </script>
+</body>
+</html>
