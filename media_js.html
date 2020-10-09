@@ -20,15 +20,24 @@
             pulaLinha()
         }
 
-        var idadeGa = 23
-        var idadeGui = 21
-        var idadebel = 43
-        var idadeBru = 26
+        var quantidadeF = parseInt(prompt("quantos familiares você tem? "));
 
-        var totalIades = (idadeBru + idadebel + idadeGui + idadeGa)
-        var mediaIdades = totalIades/4
-        mostra(mediaIdades)
+        var numero = 1;
 
+        var totalIdade = 0
+
+        while(numero <= quantidadeF) {
+           
+            var idade =parseInt(prompt("informe a idade do familiar"));
+            totalIdade = totalIdade + idade
+        numero++;
+        }
+
+        var media = totalIdade/quantidadeF
+        mostra(media)
+        
+
+        
       
      </script>
 </body>
